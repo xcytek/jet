@@ -6,12 +6,19 @@
         .row-bordered {
             border: 1px solid gray;
             border-radius: 20px;
-            padding: 20px;
+            padding: 5px;
             margin-bottom: 25px;
         }
 
         .row.evidence {
             margin: 15px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                width: 80%;
+            }
+
         }
     </style>
 
@@ -48,7 +55,7 @@
     </div>
 
     <div class="row row-bordered">
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="overflow: scroll;">
             <div class="form-group">
                 <h4>Lista de evidencias</h4>
             </div>
@@ -60,7 +67,7 @@
                         <td><a href="{{ $evidence['file'] }}">{{ $evidence['file_name'] }}</a></td>
                         <td>{{ $evidence['date'] }}</td>
                     </tr>
-                @endforeach;
+                @endforeach
             </table>
 
         </div>

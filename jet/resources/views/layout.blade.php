@@ -64,6 +64,20 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                width: 100%;
+            }
+
+            .m-b-md {
+                margin-top: 400px;
+            }
+
+            .title {
+                font-size: 60px;
+            }
+        }
     </style>
 </head>
 <body>
