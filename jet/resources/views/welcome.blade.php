@@ -7,7 +7,7 @@
     </div>
 
     <div class="links">
-        A cloud based task management system. <br><br>
+        A cloud based evidence management system. <br><br>
         <a href="/login" style="font-size: 18px;">Enter</a>
     </div>
 
