@@ -60,6 +60,9 @@
                 <h4>Lista de evidencias</h4>
             </div>
 
+            @if (empty($evidences) === true)
+                 <h6>No hay evidencias.</h6>
+            @else
             <table id="evidences" class="table table-striped table-bordered">
                 <tr><th class="th-sm">Archivo</th><th class="th-sm">Fecha</th></tr>
                 @foreach ($evidences as $evidence)
@@ -69,7 +72,7 @@
                     </tr>
                 @endforeach
             </table>
-
+            @endif
         </div>
     </div>
 
